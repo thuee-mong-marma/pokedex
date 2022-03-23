@@ -1,8 +1,21 @@
 const pokedex = document.getElementById("pokedex");
+const pokemonNumbers = 898;
+let pokemons = [];
+
+const searchInput = document.getElementById("search")
+
+searchInput.addEventListener('keyup', (e)=> {
+  const searchString = e.target.value;
+  const filteredCharacters = pokemons.filter(character => {
+    return character.name.includes(searchString);
+  })
+
+  displayPokemon(filteredCharacters);
+})
 
 const fetchPokemon = () => {
-  const promises = [];
-  for (let i = 1; i <= 150; i++) {
+  let promises = [];
+  for (let i = 1; i <= pokemonNumbers; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then(res => res.json()));
   }
@@ -12,21 +25,21 @@ const fetchPokemon = () => {
       image: result.sprites["front_default"],
       type: result.types.map(type => type.type.name).join(", "),
       id: result.id
-    }));
-    displayPokemon(pokemon);
+      }));
+      pokemons = pokemon;
+      displayPokemon(pokemon)
   });
 };
 
 const displayPokemon = pokemon => {
-  console.log(pokemon);
   const pokemonHTMLString = pokemon
     .map(
-      pokemons => `
-        <li class="card">
-            <img class="card-image" src="${pokemons.image}"/>
-            <h2 class="card-title">${pokemons.id}. ${pokemons.name}</h2>
-            <p class="card-subtitle">Type: ${pokemons.type}</p>
-        </li>
+      data => `
+        <div class="card">
+            <img class="card-image" src="${data.image}"/>
+            <h2 class="card-title">${data.id}. ${data.name}</h2>
+            <p class="card-subtitle">Type: ${data.type}</p>
+        </div>
     `
     )
     .join("");
@@ -34,3 +47,14 @@ const displayPokemon = pokemon => {
 };
 
 fetchPokemon();
+
+//SearchBar Functionality
+
+searchInput.addEventListener('keyup', (e)=> {
+  const searchString = e.target.value;
+  const filteredCharacters = pokemons.filter(character => {
+    return character.name.includes(searchString);
+  })
+
+  displayPokemon(filteredCharacters);
+})

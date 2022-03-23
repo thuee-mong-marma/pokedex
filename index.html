@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="app.css" />
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <img src="img/pokemon-logo.png">
-      <ul id="pokedex"></ul>
+      <!-- pokemon logo on the top -->
+      <img id="logo" src="img/pokemon-logo.png">
+      <!-- Search Box to search pokemons after load -->
+      <div class="searchWrapper">
+        <label for="search">Search Pokemons</label>
+        <input type="search" id="search" data-search>
+      </div>
+      <!-- pokemons list -->
+      <div id="pokedex" data-user-cards-container>
+
+      </div>
+
+      <template data-user-template>
+        <div class="card">
+          <div class="header" data-header></div>
+          <div class="body" data-body></div>
+        </div>
+      </template>
+      
     </div>
-    <script src="app.js"></script>
+    
   </body>
 </html>

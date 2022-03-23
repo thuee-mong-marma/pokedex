@@ -1,11 +1,30 @@
 body {
     color: white;
     margin: 0;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+.searchWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.searchWrapper label {
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+input {
+    margin-top : 20px;
+    font-size: 1.5rem;
 }
 
 .container {
-    background-image: url(img/background.jpg);
+    /* background-image: url(img/background.jpg); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,11 +39,11 @@ h1 {
     font-size: 54px;
 }
 
-img {
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 400px;
 }
 
 #pokedex {
@@ -39,7 +58,7 @@ img {
     padding: 40px;
     background-color: #f4f4f4;
     color: #222;
-  text-align: center;
+    text-align: center;
 }
 
 .card:hover {
@@ -50,12 +69,13 @@ img {
     text-transform: capitalize;
     margin-bottom: 0px;
     font-size: 32px;
-    font-weight: normal;
+    font-weight: bold;
 }
 .card-subtitle {
     margin-top: 5px;
-    color: #666;
-    font-weight: lighter;
+    color: rgb(59, 59, 59);
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .card-image {
@@ -77,3 +97,5 @@ img {
         transform: translateY(0);
     }
 }
+
+
