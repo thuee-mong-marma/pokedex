@@ -20,6 +20,13 @@ h1 {
     font-size: 54px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #pokedex {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
