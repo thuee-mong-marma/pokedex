@@ -98,11 +98,10 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 414px) {
     #logo {
-        width: 180px;
+        width: 200px;
     }
-
     #pokedex {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         grid-gap: 15px;
@@ -127,9 +126,3 @@ h1 {
         font-size: 20px;
     }
 } 
-
-@media only screen and (max-width: 414px){
-    #logo {
-        width : 300px;
-    }
-}
