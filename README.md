@@ -3,6 +3,7 @@ Two of my favorite thing put together in one project,Web Programming and Pokemon
 
 Type on the search bar to search for pokemons.
 
-This is an ongoing projecto of mine. Right now you can only see the pokemons and their type but i am working on more details to put into each pokemon content.
+This is an ongoing project of mine. 
+Right now you can only see the pokemons and their types but i am working on more details to put into each pokemon content.
 
 API Used : https://pokeapi.co/
