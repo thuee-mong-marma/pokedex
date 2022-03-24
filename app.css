@@ -98,4 +98,38 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 320px) {
+    #logo {
+        width: 180px;
+    }
 
+    #pokedex {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .card-subtitle {
+
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+
+    .searchWrapper label {
+        font-size: 20px;
+    }
+} 
+
+@media only screen and (max-width: 414px){
+    #logo {
+        width : 300px;
+    }
+}
