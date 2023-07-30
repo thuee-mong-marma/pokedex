@@ -6,4 +6,4 @@ You can type on the search bar to search for your favorite pokemons.
 
 API Used: [PokeAPI](https://pokeapi.co/)
 
-Live demo [here](http://handlebarsjs.com/)
+Live demo [here](https://minimal-pokedex.vercel.app/)
