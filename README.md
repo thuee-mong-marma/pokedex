@@ -1,11 +1,9 @@
-# pokedex
-Two of my favorite thing put together in one project,Web Programming and Pokemons.Hope you like it :)
+# Minimal Pokedex
 
-Type on the search bar to search for pokemons.
+Two of my favorite things put together in one project,Web Programming and Pokemons.
 
-This is an ongoing project of mine. 
-Right now you can only see the pokemons and their types but i am working on more details to put into each pokemon content.
+You can type on the search bar to search for your favorite pokemons.
 
-API Used : https://pokeapi.co/
+API Used: [PokeAPI](https://pokeapi.co/)
 
-Live Site : minimalpokedex.netlify.app
+Live demo [here](http://handlebarsjs.com/)
